@@ -3,7 +3,7 @@
 var express = require('express');
 var app = express();
 var ig = require('instagram-node').instagram();
-var accessToken = require('./private');
+var accessTokens = require('./private/keys');
 
 //Config the app
 //=======================
@@ -15,13 +15,13 @@ app.set('view engine', 'ejs');
 
 //config instagram app with client id
 ig.use({
-    access_token: accessToken
+    access_token: accessTokens.access_token
 });
 
 //could use this, seems broken, check docs
 // ig.use({
-//     client_id: '76ec3ad7d5bd431fabcd95fc245cf4da',
-//     client_secret: '13d80d6d38e14ec68c9484e127244f76'
+//     client_id: 'accessTokens.client_id',
+//     client_secret: 'accessTokens.client_secret'
 // });
 
 //Set routes
