@@ -1,0 +1,16 @@
+{
+  "name": "instanode",
+  "version": "1.0.0",
+  "description": "instagram and node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nate Finch",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.1",
+    "instagram-node": "^0.5.8"
+  }
+}
